@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>TheDevNews</title>
+
+    <style>
+        html{
+            font-family: "Montserrat", sans-serif;
+        }
+
+        body{
+            margin: 0;
+        }
+
+        h1{
+            font-weight: 700;
+            font-size: 36px;
+        }
+
+        #tituloHeader{
+            background-color: #02A28F;
+            padding: 16px 156px 16px 156px;
+            color: #FFFFFF;
+        }
+
+        main{
+            display: grid;
+            grid-template-columns: 60% auto;
+            padding: 16px 156px 16px 156px;
+        }
+
+        #sectionOpiniao{
+            padding-top: 16px;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        #imgOpiniao{
+            width: 744px;
+            height: auto;
+            border-radius: 10px 10px 10px 10px;
+            position: relative;
+        }
+
+        #titulopost{
+            padding-left: 16px;
+            color: #FFFFFF;
+            position: absolute;    
+        }
+
+        #maisRecentes{
+            background-color: #02A28F;
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            margin-top: 12px;
+            border-radius: 16px;
+            justify-content: space-between;
+            width: 744px;
+        }
+
+        #gridPostsMaisRecentes{
+            margin-top: 12px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        #desenvolvimentoMobile{
+            width: 100%;
+            grid-area: 1 / 1;
+        }
+
+        #balancearVida{
+            width: 100%;
+            grid-area: 1 / 2;
+        }
+
+        #ConfigurandoVSCode{
+            width: 100%;
+            grid-area: 2 / 1;
+        }
+
+        #monitorUltraWide{
+            width: 100%;
+            grid-area: 2 / 2;
+        }
+
+        #sidebarOne{
+            height: 493.33px;
+        }
+
+        #sidebarPosts{
+            background-color: #02A28F;
+            padding: 8px;
+            border-radius: 8px;
+            margin-top: 16px;
+        }
+
+        .sidebarPostsItems{
+            display: flex;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+
+        ul > li{
+
+        }
+
+        #Categorias{
+            background-color: #02A28F;
+            padding: 8px;
+            border-radius: 8px;
+            margin-top: 16px;
+        }
+
+        .categoriasItems{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header id="tituloHeader">
+        <h1>The Dev News</h1>
+    </header>
+    
+    <main>
+        <aside id="left">
+            <section id="sectionOpiniao">
+                <img id="imgOpiniao" src="./assets/imgGrandEsq.jpg">
+
+                <div id="titulopost">
+                    <p>opinião</p>
+                    <h2>Como ser um bom desenvolvedor</h2>
+                    <p><b>By</b> Fabio Tetsuo</p>
+                </div>               
+            </section>
+
+            <section>
+                <nav id="maisRecentes">
+                    <h3>Posts mais recentes</h3>
+                    <p>Ver todos</p>
+                </nav>
+                
+                <div id="gridPostsMaisRecentes">
+                    <div id="desenvolvimentoMobile">
+                        <img src="./assets/desenvolvimentomobile.svg">
+                        <p>desenvolvimento</p>
+                        <h4>Desenvolvimento mobile</h4>
+                        <p>By Fabio Tetsuo</p>
+                        <h5>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</h5>
+                    </div>
+
+                    <div id="balancearVida">
+                        <img src="./assets/balancearVida.svg">
+                        <p>desenvolvimento</p>
+                        <h4>Desenvolvimento mobile</h4>
+                        <p>By Fabio Tetsuo</p>
+                        <h5>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</h5>
+                    </div>
+
+                    <div id="configurandoVSCode">
+                        <img src="./assets/configurandoVSCode.svg">
+                        <p>desenvolvimento</p>
+                        <h4>Desenvolvimento mobile</h4>
+                        <p>By Fabio Tetsuo</p>
+                        <h5>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</h5>
+                    </div>
+
+                    <div id="monitorUltraWide">
+                        <img src="./assets/monitorOUultrawide.svg">
+                        <p>desenvolvimento</p>
+                        <h4>Desenvolvimento mobile</h4>
+                        <p>By Fabio Tetsuo</p>
+                        <h5>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</h5>
+                    </div>
+                </div>
+            </section>
+        </aside>
+
+        <aside id=right>
+            <section id="sidebarOne">
+                <nav id="sidebarPosts">
+                    <h3>Posts populares</h3>
+                </nav>
+                
+                <sidebar class="sidebarPostsItems">
+                    <img src="./assets/desenvolvimentoAtual.svg" alt="">
+                    <div>
+                        <h5>Desevolvimento atual</h5>
+                        <p>22 Agosto 2022</p>
+                    </div>
+                </sidebar>
+
+                <sidebar class="sidebarPostsItems">
+                    <img src="./assets/labXhub.svg" alt="">
+                    <div>
+                        <h5>Desevolvimento atual</h5>
+                        <p>22 Agosto 2022</p>
+                    </div>
+                </sidebar>
+
+                <sidebar class="sidebarPostsItems">
+                    <img src="./assets/cafe.svg" alt="">
+                    <div>
+                        <h5>Desevolvimento atual</h5>
+                        <p>22 Agosto 2022</p>
+                    </div>
+                </sidebar>
+            </section>
+
+            <section>
+                <nav id="Categorias">Categorias</nav>
+                <ul>
+                    <div class="categoriasItems">
+                    <li>> saude</li>
+                    <p>(1)</p>
+                    </div>
+
+                    <div class="categoriasItems">
+                    <li>>desenvolvimento</li>
+                    <p>(2)</p>
+                    </div>
+
+                    <div class="categoriasItems">
+                    <li>> produtividade</li>
+                    <p>(2)</p>
+                    </div>
+
+                    <div class="categoriasItems">
+                    <li>> opiniao</li>
+                    <p>(1)</p>
+                    </div>
+                </ul>
+            </section>
+        </aside>
+    </main>
+
+    <footer></footer>
+    
+</body>
+</html>
